@@ -31,6 +31,5 @@ jobs:
       packages: write
     steps:
       - uses: TheBoutrosLab/tool-Docker-action@v2
-      # Uncomment if you expect to use non-SemVer release tags
-      # with:
-      #   non-semver-tags: true
+        with:
+          non-semver-tags: true
