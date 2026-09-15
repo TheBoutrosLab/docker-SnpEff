@@ -14,6 +14,7 @@ ARG HTSLIB_VERSION=1.24
 RUN mamba create -qy -p ${CONDA_ENV_PATH} \
     -c bioconda \
     -c conda-forge \
+    openjdk=21 \
     snpeff==${SNPEFF_VERSION} \
     snpsift==${SNPSIFT_VERSION} \
     htslib==${HTSLIB_VERSION} && \
